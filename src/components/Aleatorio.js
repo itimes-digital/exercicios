@@ -1,6 +1,6 @@
 import React from 'react-native'
 import {Text} from 'react-native'
-import Estilo from './styleComponent'
+import Estilo from './estilo'
 
 export default (props) => {
 
