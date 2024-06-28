@@ -11,7 +11,9 @@ import Estilo from './components/estilo'
 //import Contador from './components/Contador'
 //import Pai from './components/com_indireta/Pai'
 //import ContadorV2 from './components/contador/ContadorV2'
-import Diferenciar from './components/Diferenciar'
+//import Diferenciar from './components/Diferenciar'
+import Familia from './components/relacao/Familia'
+import Membro from './components/relacao/Membro'
 
 const App = function(){
     const jsx = <Text>Teste</Text>
@@ -22,10 +24,18 @@ export default () => {
 
     return (
      <SafeAreaView  style={Estilo.App}>
-       {
-        <Diferenciar />
        
+        <Familia>
+            <Membro nome="Bia" sobrenome="Arruda" />
+            <Membro nome="Carlos" sobrenome="Arruda" />
+        </Familia>
+        <Familia>
+            <Membro nome="James" sobrenome="Brown" />
+            <Membro nome="Michael" sobrenome="Jackson" />
+        </Familia>
+        {
        /*  
+       <Diferenciar />
        <ContadorV2/>
        <Pai/> 
        <Com1Oficial/>

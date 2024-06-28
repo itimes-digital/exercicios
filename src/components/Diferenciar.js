@@ -1,11 +1,12 @@
 import React from 'react'
-import { Text, Platform } from 'react-native'
+import { Text, Platform, View } from 'react-native'
 import Estilo from './estilo'
 
 export default _ => {
-        if(Platform.OS === 'ios'){
-            return <Text style={Estilo.txtG}>iOS</Text>
-        }else if(Platform.OS === 'android'){
-            return <Text style={Estilo.txtG}>Android</Text>
-        }
+            return <View>
+                    <Text style={Estilo.txtG}>Você está executando no device: </Text>
+                        {Platform.OS === 'ios' 
+                            ? <Text style={Estilo.txtG}>iOS</Text> 
+                            : null}
+                </View>
 }
