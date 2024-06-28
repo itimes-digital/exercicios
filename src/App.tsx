@@ -12,8 +12,11 @@ import Estilo from './components/estilo'
 //import Pai from './components/com_indireta/Pai'
 //import ContadorV2 from './components/contador/ContadorV2'
 //import Diferenciar from './components/Diferenciar'
-import Familia from './components/relacao/Familia'
-import Membro from './components/relacao/Membro'
+//import Familia from './components/relacao/Familia'
+//import Membro from './components/relacao/Membro'
+//import UsuarioLogado from './components/UsuarioLogado'
+import ListaProdutos from './components/produtos/ListaProdutos'
+import ListaProdutosV2 from './components/produtos/ListaProdutosV2'
 
 const App = function(){
     const jsx = <Text>Teste</Text>
@@ -24,6 +27,17 @@ export default () => {
 
     return (
      <SafeAreaView  style={Estilo.App}>
+       <ListaProdutosV2 />
+       
+       {
+        /*
+        <UsuarioLogado usuario={{ nome: 'Gui', email: 'gui@gmail.com'}} />
+        <UsuarioLogado usuario={{ nome: 'Ana'}} />
+        <UsuarioLogado usuario={{ email: 'carlos@empresa.com' }} />
+        <UsuarioLogado usuario={ null } />
+        <UsuarioLogado usuario={{}} />
+        <UsuarioLogado usuario={{ nome: 'Emilly', email: 'emilly@gmail.com'}} />
+
        
         <Familia>
             <Membro nome="Bia" sobrenome="Arruda" />
@@ -33,8 +47,7 @@ export default () => {
             <Membro nome="James" sobrenome="Brown" />
             <Membro nome="Michael" sobrenome="Jackson" />
         </Familia>
-        {
-       /*  
+         
        <Diferenciar />
        <ContadorV2/>
        <Pai/> 
